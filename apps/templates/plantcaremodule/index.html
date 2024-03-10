@@ -1,7 +1,82 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-<h1> Plant Care </h1>
-<h2> Healthy Plants, Happy You! </h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlantCare Website</title>
+  <style>
+    /* CSS code goes here */
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
 
- {% endblock content %}
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .button:hover {
+      background-color: #004499;
+    }
+
+    /* Custom colors */
+    body {
+      background-color: #0B6623; /* Forest Green */
+    }
+
+    .container {
+      background-color: #9DC183; /* Sage Green */
+    }
+  </style>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+  <div class="container">
+    <h1> Plant Care </h1>
+    <h2> Healthy Plants, Happy You! </h2>
+    <p>Learn how to take care of your plants with our helpful tips.</p>
+    <a href="#" class="button">Get Started</a>
+  </div>
+  {% endblock content %}
+</body>
+</html>
+

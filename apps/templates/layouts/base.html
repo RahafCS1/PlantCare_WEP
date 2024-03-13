@@ -7,14 +7,15 @@
          PlantCare {% block title %}{% endblock %} 
       </title>
       <link rel="stylesheet" type="text/css" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
       <style>
          /* CSS styles go here */
          body {
-           background-color: #bbcea8; /* Forest Green */
+           background-color: #bbcea8; 
          }
      
          .container {
-           background-color: #96b379; /* Sage Green */
+           background-color: #a6bf8e; 
          }
       </style>
     <!-- here you can add the stylesheets-->
@@ -25,14 +26,27 @@
      
       {% block content %}
       <div class="container">
-         
+         <!-- Additional content here -->
+      <h2>There are plenty of ways to care for your plant. With the help of plant experts, we’ve weeded out the top 10 tips for healthy, happy plants</h2>
+      <ul>
+        <li>​​Choose plants based on your light</li>
+        <li>Pick plants that work with your schedule</li>
+        <li>​Be mindful when watering</li>
+        <li>​Raise humidity levels when needed</li>
+        <li>Always keep temperatures stable</li>
+        <li>​Know when to skip the fertilizer</li>
+        <li>Shop from a reliable source </li>
+        <li>Show a little TLC at first</li>
+        <li>​Don’t be scared to repot </li>
+        <li>Keep drainage in mind</li>
+      </ul>
          
        </div>
      
       
       {% endblock content %}
 
-      
+     {%include 'includes/sidebar.html'%}
      {% include 'includes/footer.html' %}
    </body>
 </html>

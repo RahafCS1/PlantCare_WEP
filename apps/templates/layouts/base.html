@@ -4,9 +4,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <title>
-         PlantCare {% block title %}{% endblock %}
+         PlantCare {% block title %}{% endblock %} 
       </title>
-
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <style>
+         /* CSS styles go here */
+         body {
+           background-color: #bbcea8; /* Forest Green */
+         }
+     
+         .container {
+           background-color: #96b379; /* Sage Green */
+         }
+      </style>
     <!-- here you can add the stylesheets-->
     <!-- here you can add the javascripts-->
    </head>
@@ -14,9 +24,15 @@
       {% include 'includes/header.html' %} 
      
       {% block content %}
+      <div class="container">
+         
+         
+       </div>
+     
+      
       {% endblock content %}
 
       
-       {% include 'includes/footer.html' %}
+     {% include 'includes/footer.html' %}
    </body>
 </html>

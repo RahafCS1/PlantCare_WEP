@@ -1,12 +1,10 @@
 {% extends 'layouts/base.html' %}
 
-{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
   <title>PlantCare Website</title>
   <style>
-    /* CSS code goes here */
     /* Reset some default styles */
     body, h1, h2, h3, p, ul, li {
       margin: 0;
@@ -25,15 +23,17 @@
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 36px;
       font-weight: bold;
       margin-bottom: 20px;
+      color: #0066cc;
     }
 
     p {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 1.5;
       margin-bottom: 10px;
+      color: #333333;
     }
 
     a {
@@ -71,12 +71,9 @@
 <body>
   <!-- Your HTML content goes here -->
   <div class="container">
-    <h1> Plant Care </h1>
-    <h2> Healthy Plants, Happy You! </h2>
+    <h1>Plant Care</h1>
+    <h2>Healthy Plants, Happy You!</h2>
     <p>Learn how to take care of your plants with our helpful tips.</p>
-    <a href="#" class="button">Get Started</a>
   </div>
-  {% endblock content %}
 </body>
 </html>
-

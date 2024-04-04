@@ -1,79 +1,398 @@
-{% extends 'layouts/base.html' %}
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>PlantCare Website</title>
-  <style>
-    /* Reset some default styles */
-    body, h1, h2, h3, p, ul, li {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #ffffff;
-    }
-
-    h1 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #0066cc;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.5;
-      margin-bottom: 10px;
-      color: #333333;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #0066cc;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-
-    .button:hover {
-      background-color: #004499;
-    }
-
-    /* Custom colors */
-    body {
-      background-color: #0B6623; /* Forest Green */
-    }
-
-    .container {
-      background-color: #9DC183; /* Sage Green */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Online Plants Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
+
 <body>
-  <!-- Your HTML content goes here -->
-  <div class="container">
-    <h1>Plant Care</h1>
-    <h2>Healthy Plants, Happy You!</h2>
-    <p>Learn how to take care of your plants with our helpful tips.</p>
-  </div>
+    <!--Header section starts-->
+    <header>
+        <div class="header-1">
+            <div class="share">
+                <span>Follow us:</span>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+            <div class="share">
+                <span>Call us:</span>
+                <a href="#">+00000000</a>
+            </div>
+
+        </div>
+        <div class="header-2">
+            <a href="#" class="logo"><i class="fas fa-seedling"></i>Plants Shop</a>
+            <form action="" class="serach-bar-container">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+
+            </form>
+        </div>
+        <div class="header-3">
+            <div id="menu-bar" class="fas fa-bars ">
+            </div>
+            <nav class="nav-bar">
+                <a href="#Home">Home</a>
+                <a href="#Category">Category</a>
+                <a href="#Product">Product</a>
+                <a href="#Deal">Deal</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart" id="cart-btn"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-user" id="login-btn"></a>
+            </div>
+        </div>
+    </header>
+    <!--Header section ends-->
+    
+
+    <!--Home section starts-->
+    <section class="Home" id="Home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(./images/slider1.jpg);">
+                        <div class="content">
+                            <span>Upto 75% off</span>
+                            <h3>Plant big sale special offer</h3>
+                            <a href="#" class="btn">Shopping now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(./images/slider2.jpg);">
+                        <div class="content">
+                            <span>Upto 45% off</span>
+                            <h3>Plant big sale special offer</h3>
+                            <a href="#" class="btn">Shopping now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background:url(./images/slider3.jpg);">
+                        <div class="content">
+                            <span>Upto 15% off</span>
+                            <h3>Plant big sale special offer</h3>
+                            <a href="#" class="btn">Shopping now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--Home section ends-->
+    <!--banner section start-->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="./images/banner1.jpg" alt="">
+            <div class="content">
+                <span>New arrivals</span>
+                <h3>House plants</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./images/banner2.jpg" alt="">
+            <div class="content">
+                <span>New arrivals</span>
+                <h3>Office plants</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+
+    </section>
+    <!--banner section ends-->
+    <!--category section starts-->
+    <section class="Category" id="Category">
+        <h1 class="heading">Shop by category</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/cat1.jpg" alt="">
+                <div class="content">
+                    <h3>Bonsai</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/cat2.jpg" alt="">
+                <div class="content">
+                    <h3>Plants for house</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/cat3.jpg" alt="">
+                <div class="content">
+                    <h3>Plants for office</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/cat4.jpg" alt="">
+                <div class="content">
+                    <h3>Gift plants</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--category section ends-->
+    <!--poduct section starts-->
+    <section class="product" id="Product">
+        <h1 class="heading">New products</h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product1.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product2.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product3.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product4.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product5.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+                <img src="./images/product6.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantify">
+                    <span>Quantify:</span>
+                    <input type="number" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $14.70<span> $18.99</span>
+                </div>
+                <a href="#" class="btn">Add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!--product section ends-->
+   
+    <!-- contact section starts  -->
+
+    <section class="contact" id="Contact">
+
+        <h1 class="heading">get in touch</h1>
+
+        <div class="row">
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" required>
+                    <label>name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="number" required>
+                    <label>number</label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <label>message</label>
+                </div>
+
+                <input type="submit" value="send message" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Online Plants Shop</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">Saudi Arabia</a>
+                <a href="#">USA</a>
+                <a href="#">Egypt</a>
+                <a href="#">france</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#Home">home</a>
+                <a href="#Category">category</a>
+                <a href="#Product">product</a>
+                <a href="#Deal">deal</a>
+                <a href="#Contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linked</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Us </span> | all rights reserved! </h1>
+
+    </section>
+
+    <!-- footer section ends -->
+    <!-- scroll top button  -->
+    <a href="#Home" class="scroll-top fas fa-angle-up"></a>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+
 </html>
